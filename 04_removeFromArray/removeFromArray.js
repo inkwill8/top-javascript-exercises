@@ -1,5 +1,14 @@
 const removeFromArray = function(array, value) {
-    
+
+    let newArray = [];
+
+    for (const index of array) {
+        if (index == value) {
+             array.splice(index);
+        } else {
+
+        }
+    }
 };
 
 
