@@ -1,8 +1,11 @@
-const removeFromArray = function(array, value) {
+const removeFromArray = function(array, ...values) {
 
-    let returnValue = array.filter((index) => index !== value);
+    for (const value of values) {
+    array = array.filter((index) => index !== value);
 
-    return returnValue;
+    }
+
+    return array;
 
 };
 
