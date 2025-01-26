@@ -1,21 +1,9 @@
 const removeFromArray = function(array, value) {
 
-    // let newArray = [];
+    let returnValue = array.filter((index) => index !== value);
 
-    // for (const index of array) {
-    //     if (index == value) {
-    //          array.filter(index);
-             
-    //     } else {
+    return returnValue;
 
-    //     }
-
-        
-    // }
-
-    array.filter(function(value) {
-        return array !== value;
-    });
 };
 
 
