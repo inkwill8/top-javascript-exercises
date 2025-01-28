@@ -4,12 +4,19 @@ const sumAll = function(startInt, endInt) {
     let range = [];
 
     // create a condition which triggers a certain function depending on which argument is greater
-    if (startInt < endInt) {
+    if (startInt < 0 ||
+        endInt < 0 ||
+
+        startInt !== Math.floor(startInt) ||
+        endInt !== Math.floor(endInt)) {
+        return 'ERROR';
+
+    } else if (startInt < endInt) {
         smallStart();
+
     } else if (startInt > endInt) {
         bigStart();
     }
-
 
     // given a starting and ending integer, find all the values between and INCLUDING those integers
     function smallStart() {
