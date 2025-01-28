@@ -7,18 +7,10 @@ const leapYears = function(year) {
         year % 400 == 0 && 
         year % 4 == 0)
     {
-        // if (year % 100 == 0 &&
-        //     year % 400 == 0) {
             return true;
     }   else {
         return false;
     }
-
-    // is it divisible by 100?
-
-    // if yes, NOT a leap year UNLESS
-
-    // divisible by 400 as well
 };
 
 
