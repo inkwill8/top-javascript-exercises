@@ -3,16 +3,18 @@ const add = function(a,b) {
 	return sum;
 };
 
-const subtract = function() {
-	
+const subtract = function(a,b) {
+	let sum = a - b;
+	return sum;
 };
 
 const sum = function() {
 	
 };
 
-const multiply = function() {
-
+const multiply = function(a,b) {
+	let sum = a * b;
+	return sum;
 };
 
 const power = function() {
