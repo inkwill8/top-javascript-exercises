@@ -27,8 +27,11 @@ const multiply = function(numbers) {
 
 };
 
-const power = function() {
+const power = function(base, exp) {
+	let result = 0;
+	result = base ** exp;
 	
+	return result;
 };
 
 const factorial = function() {
