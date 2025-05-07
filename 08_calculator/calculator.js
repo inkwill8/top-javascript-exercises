@@ -34,8 +34,18 @@ const power = function(base, exp) {
 	return result;
 };
 
-const factorial = function() {
-	
+const factorial = function(number) {
+// we need a condition to always return 1 if we are factorializing 0 or 1
+		
+	let result = number;
+	if ( number === 0 || number === 1 ) 
+		return 1; 
+
+	while ( number > 1 ) {
+	number--;
+	result *= number;
+}
+	return result;
 };
 
 // Do not edit below this line
