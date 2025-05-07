@@ -12,9 +12,13 @@ const sum = function() {
 	
 };
 
-const multiply = function(a,b) {
-	let sum = a * b;
-	return sum;
+const multiply = function(numbers) {
+	let result = 1;
+	for (let i = 0; i < numbers.length; i++) {
+		result *= numbers[i];
+}
+	return result;
+
 };
 
 const power = function() {
