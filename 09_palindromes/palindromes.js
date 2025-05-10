@@ -1,10 +1,17 @@
 const palindromes = function (string) {
-	let newString = string.split('').reverse().join('');
+	const pureString = string.
 
-return	string == newString ? true : false;
+	let filtered = string.split('').filter(char => char.replace(/[!#$%&()*+,-./:;<=>?@[\\\]^_{|}~]/g, ''));
+console.log(filtered);
+	let newString = filtered.reverse().join('');
+console.log(newString);
+
+// return	string == newString ? true : false;
+	let result = pureString == newString ? true : false;
+console.log(result);
 };
 
-// palindromes('rose');
+ palindromes('racecar!');
 
 // Do not edit below this line
-module.exports = palindromes;
+// module.exports = palindromes;
