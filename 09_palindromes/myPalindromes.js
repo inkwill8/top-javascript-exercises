@@ -1,4 +1,4 @@
-const palindromes = function (string) {
+function palindromes(string) {
 console.log(string);
 	let noPunc = string.replace(/[!#$%&()*+,-./:;<=>?@[\\\]^_{|}~]/g, '');
 console.log(noPunc);
@@ -13,9 +13,8 @@ console.log(arrayString);
 	let pureString = arrayString.join('');
 console.log(pureString);
 
- return	standardized == pureString ? true : false;
+ let result = standardized == pureString ? true : false;
+console.log(result);
 };
 
-
-// Do not edit below this line
-module.exports = palindromes;
+palindromes('A car, a man, a maraca.');
